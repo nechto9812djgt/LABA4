@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный макет</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="Loader"><div class="loader"></div></div>
+    <div class="content" style="display: none;">
+        <div class="button-container">
+            <button id="btn1">Кнопка 1</button>
+            <button id="btn2">Кнопка 2</button>
+            <button id="btn3">Кнопка 3</button>
+            <button id="btn4">Кнопка 4</button>
+            <button id="btn5">Кнопка 5</button>
+        </div>
+        <div class="button-container">
+            <button id="btn11">Кнопка 1</button>
+            <button id="btn22">Кнопка 2</button>
+            <button id="btn33">Кнопка 3</button>
+            <button id="btn44">Кнопка 4</button>
+            <button id="btn55">Кнопка 5</button>
+        </div>
+        <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function(){
+                document.querySelector('.content').style.display = 'block';
+                document.querySelector('.Loader').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

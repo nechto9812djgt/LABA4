@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" style="
+    margin-top: 15px;
+    margin-left: 15%;
+    margin-bottom: 5px;
+    margin-right: 15%;
+    border: 5px solid white;
+    border-radius: 10px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>анимации и ???</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="card.css">
+</head>
+<body style="text-align: center;">
+  <nav>
+    <ul>
+      <li><a id="our_cats">Наши коты</a></li>
+      <li><a id="about">О нас</a></li>
+      <li><a id="slider">Слайдер</a></li>
+      <li><a href="media.html">ладно я устать</a></li>
+    </ul>
+  </nav>
+  <main class="wrapper">
+    <section class="start"></section>
+    <section class="cat" id="cats">
+      <ul>
+        <li>
+          <figure>
+            <img class="imgcat" src="https://www.grazia.ru/upload/img_cache/ad9/ad99521f39944fdfd03bde3737b531c1_cropped_666x666.jpeg">
+          </figure>
+          <p class="info">
+            маленький грустный котенок, он просит на лечение, дайте 5 рублей
+          </p>
+          <p class="price">Цена: $10000</p>
+          <button class="buy">Купить</button>
+        </li>
+        <li>
+          <figure>
+            <img class="imgcat" src="https://content.onliner.by/news/1100x5616/15b1c1b067937f746872ee39cf245327.jpg">
+          </figure>
+          <p class="info">
+            коты шпиони
+          </p>
+          <p class="price">Цена: $736429734</p>
+          <button class="buy">Купить</button>
+        </li>
+        <li>
+          <figure>
+            <img class="imgcat" src="https://tvmag.ru/upload/iblock/88d/0yvf4aoe4wgbf1ytr37fe0kzdqov3vuo/koty.jpeg">
+          </figure>
+          <p class="info">
+            кот аристократ
+          </p>
+          <p class="price">Цена: $7373</p>
+          <button class="buy">Купить</button>
+        </li>
+        <li>
+            <figure>
+                <form>
+                    <label>
+                      Ваше имя
+                      <input type="text" required placeholder="тапочки">
+                    </label>
+                    <br>
+                    <label>
+                      Что хотите?
+                      <input type="text" required placeholder="мамочки">
+                    </label>
+                    <button type="submit">Ничего не делать</button>
+                  </form>                      
+            </figure>
+        </li>
+      </ul>
+    </section>
+    <div class="slider">
+      <div class="slide" id="slide1"></div>
+      <div class="slide" id="slide2"></div>
+      <div class="slide" id="slide3"></div>
+    </div>
+    <script src="slider.js"></script>
+  </main>
+  <script src="nav.js"></script>
+  <footer>
+    <p id="end">ыыаааэээ</p>
+  </footer>
+  <input id="btn" type="button" value="OK">
+</body>
+</html>

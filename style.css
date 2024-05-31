@@ -1,0 +1,56 @@
+html{
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+h1{ 
+    color: green;
+    text-align: center;
+    font-weight: normal;
+    /* color: white; */
+}
+h2{ 
+    color: skyblue;
+    width: 300px;
+    text-align: right;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+h3{ 
+    color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{ 
+    color: red;
+    text-align: justify;
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Arial';
+    line-height: 30px;
+    text-indent: 30px;
+}
+#first{
+    color: green;
+    font-style: normal;
+}
+#second{
+    text-align: center;
+    text-indent: 0px;
+}
+table{
+    width: 400px;
+    height: 200px;
+}
+th{ 
+    text-align: left;
+    transform: rotate(90deg)}
+td{ 
+    text-align: center;
+    font-weight: bold;
+    vertical-align: top;
+}
+th,h1,h2{ font-weight: normal;}
+/* 28.	 Для <p> сделайте шрифт Arial, 16 пикселей, курсив, жирный, межстрочный интервал в 30px. */
+/* 29.	 Для <h1> сделайте следующий шрифт: нежирный, 20 пикселей, Verdana. */

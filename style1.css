@@ -1,0 +1,104 @@
+@keyframes buttonfun 
+{
+    0% {scale: 50%;}
+    100% {scale: 110%;}    
+}
+@keyframes buttonendfun 
+{
+    100% {scale: 110%; color: #ffffff;}
+    0% {scale: 50%; background-color: rgb(248, 3, 44); transform: scale(200%);}    
+}
+#btn
+{
+    animation-name: buttonendfun;
+    animation-duration: 60ms;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#btn:hover
+{
+    background-color: rgb(248, 3, 44);
+    transform: scale(200%);   
+    transition: background-color 2s, transform 1s;
+    animation-name: buttonfun;
+    animation-duration: 70ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+a 
+{
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+a:hover {
+  opacity: .6;
+}
+.start {
+  background: url('https://www.dogeat.ru/img/blog/%D0%BA%D0%BE%D1%82%D1%8B%20%D0%B1%D0%BE%D1%8F%D1%82%D1%81%D1%8F%20%D0%BE%D0%B3%D1%83%D1%80%D1%86%D0%BE%D0%B2222%20(1).jpg') center;
+  background-size: cover;
+  padding: 12% 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.cat > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.cat > ul > li {
+  border: 3px solid #E2E2E2;
+  border-radius: .5rem;
+}
+.cat > ul > li > figure {
+  max-height: 100%;
+  overflow: hidden;
+  border-radius: .5rem;
+  position: relative;
+}
+.cat > ul > li > figure > img {
+  width: 100%;
+}
+.cat > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+.cat > ul > li > figure > figcaption > h3 {
+  color: white;
+}
+.cat > ul > li > p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #d8d8d8;
+}
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+label{
+  font-family: fantasy;
+  text-align: left;
+  color: white;
+  padding-right: 10%;
+}
+input{
+  margin: 5%;
+}

@@ -1,0 +1,73 @@
+html{
+    background: radial-gradient(circle, rgb(129, 13, 22), #ee93bd);
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin: 0 10px;
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+nav a:hover{
+    color: white;
+} 
+nav li:hover{
+    transform: translateY(0);
+}
+.cat{
+    display: none;
+}
+.slider{
+    display: none;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	margin-top: 25px;
+    margin-bottom: 25px;
+	position: relative;
+	overflow: hidden;
+}
+@keyframes slide {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.slide {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: slide;
+	animation-duration: 14s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#slide1 { 
+    background: url("https://www.grazia.ru/upload/img_cache/ad9/ad99521f39944fdfd03bde3737b531c1_cropped_666x666.jpeg");
+    animation-delay: 7s;
+}
+#slide2 { 
+    background: url("https://content.onliner.by/news/1100x5616/15b1c1b067937f746872ee39cf245327.jpg");
+    animation-delay: 3.5s;
+}
+#slide3 { 
+    background: url("https://tvmag.ru/upload/iblock/88d/0yvf4aoe4wgbf1ytr37fe0kzdqov3vuo/koty.jpeg");
+    animation-delay: 0s;
+}
